@@ -27,7 +27,7 @@ class DoomAgentNet(nn.Module):
 # Configuracion
 
 MODEL_PATH = "doom_model_gpu.pth"  # Modelo entrenado
-CONFIG_PATH = "scenarios/Amalgoom_B-Side.cfg" # Escenario entrenado
+CONFIG_PATH = "scenarios/D3_battle.cfg" # Escenario entrenado
 NUM_ACCIONES = 14  # Debe coincidir con el entrenamiento
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
