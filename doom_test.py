@@ -6,7 +6,7 @@ from stable_baselines3 import PPO
 
 MODEL_PATH = "doom_ppo_final" 
 
-CONFIG_PATH = "scenarios/Amalgoom.cfg" 
+CONFIG_PATH = "scenarios/defend_the_center.cfg" 
 
 #! Debe ser IDÉNTICA a la que usaste en la clase VizDoomGym
 ACTIONS_LIST = [
