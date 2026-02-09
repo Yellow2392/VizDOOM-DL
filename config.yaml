@@ -1,5 +1,5 @@
 scenario:
-  doom_scenario_path: "scenarios/basic.wad"    # Ruta al .wad del escenario
+  doom_scenario_path: "scenarios/defend_the_center.wad"    # Ruta al .wad del escenario
   doom_map: "map01"                            # Nivel dentro del WAD
   doom_skill: 3                                # 1 (fácil) ... 5 (difícil)
   episode_timeout_tics: 2100                   # ~60s a 35Hz (0 = sin límite)
