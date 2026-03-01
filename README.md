@@ -16,4 +16,4 @@ Para poder ejecutar el modelo entrenado en el mapa configurado en `doom_test.py`
 ```bash
 python doom_test.py
 ```
-\* Para esto es necesario cargar el archivo del modelo `doom_model_gpu.pth`. Para el presente proyecto este fue entrenado usando los recursos de Google Colaboratory. Los detalles se encuentran en esta [carpeta](https://drive.google.com/drive/folders/1-juNDtYpMphmfPsBDAeyeJJujALwfqNF) (junto con el dataset y código de entrenamiento).
+\* Para esto es necesario cargar el archivo del modelo. Para el presente proyecto este fue entrenado usando los recursos de Google Colaboratory. Los detalles se encuentran en esta [carpeta](https://drive.google.com/drive/folders/1-juNDtYpMphmfPsBDAeyeJJujALwfqNF) (junto con el dataset y código de entrenamiento).
