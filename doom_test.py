@@ -6,7 +6,7 @@ from collections import deque
 from stable_baselines3 import PPO
 
 MODEL_PATH = "doom_ppo_assassin" 
-CONFIG_PATH = "scenarios/defend_the_center.cfg"
+CONFIG_PATH = "scenarios/deadly_corridor.cfg"
 
 #! Debe ser IDÉNTICA a la de la clase VizDoomGym
 ACTIONS_LIST = [
