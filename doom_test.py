@@ -5,8 +5,8 @@ import time
 from collections import deque 
 from stable_baselines3 import PPO
 
-MODEL_PATH = "doom_sniper_checkpoint_699972_steps" 
-CONFIG_PATH = "scenarios/deadly_corridor.cfg"
+MODEL_PATH = "doom_ppo_sniper_center" 
+CONFIG_PATH = "scenarios/defend_the_center.cfg"
 
 #! Debe ser IDÉNTICA a la de la clase VizDoomGym
 ACTIONS_LIST = [
