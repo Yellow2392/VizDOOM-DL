@@ -5,8 +5,8 @@ import time
 from collections import deque 
 from stable_baselines3 import PPO
 
-MODEL_PATH = "doom_ppo_final" 
-CONFIG_PATH = "scenarios/deadly_corridor.cfg"
+MODEL_PATH = "doom_final_1" 
+CONFIG_PATH = "scenarios/rocket_basic.cfg"
 
 #! Debe ser IDÉNTICA a la de la clase VizDoomGym
 ACTIONS_LIST = [
