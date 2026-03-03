@@ -5,7 +5,7 @@ import time
 from collections import deque 
 from stable_baselines3 import PPO
 
-MODEL_PATH = "models/doom_ppo_sniper" 
+MODEL_PATH = "models/doom_FINAL_ojala" 
 CONFIG_PATH = "scenarios/rocket_basic.cfg"
 
 #! Debe ser IDÉNTICA a la de la clase VizDoomGym
