@@ -5,18 +5,18 @@ import time
 from collections import deque 
 from stable_baselines3 import PPO
 
-MODEL_PATH = "doom_final_1" 
+MODEL_PATH = "doom_final_sniper" 
 CONFIG_PATH = "scenarios/deadly_corridor.cfg"
 
 #! Debe ser IDÉNTICA a la de la clase VizDoomGym
 ACTIONS_LIST = [
-    [0, 0, 0, 0, 0, 0], # Wait
-    [1, 0, 0, 0, 0, 0], # Fwd
-    [0, 1, 0, 0, 0, 0], # Back
-    [0, 0, 1, 0, 0, 0], # Left
-    [0, 0, 0, 1, 0, 0], # Right
-    [0, 0, 0, 0, 1, 0], # Attack
-    [0, 0, 0, 0, 0, 1]  # Use
+    [0, 0, 0, 0, 0], # Wait
+    [1, 0, 0, 0, 0], # Fwd
+    [0, 1, 0, 0, 0], # Back
+    [0, 0, 1, 0, 0], # Left
+    [0, 0, 0, 1, 0], # Right
+    [0, 0, 0, 0, 1], # Attack
+    [0, 0, 0, 0, 0]  # Use
 ]
 
 print(f"Cargando {MODEL_PATH}...")
