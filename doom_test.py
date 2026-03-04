@@ -5,8 +5,8 @@ import time
 from collections import deque 
 from stable_baselines3 import PPO
 
-MODEL_PATH = "models/doom_FINAL_ojala" 
-CONFIG_PATH = "scenarios/rocket_basic.cfg"
+MODEL_PATH = "models/doom_AGENTE_EXAMEN_FINAL" 
+CONFIG_PATH = "scenarios/wiredtomb.cfg"
 
 #! Debe ser IDÉNTICA a la de la clase VizDoomGym
 ACTIONS_LIST = [
@@ -45,7 +45,10 @@ def get_stacked_observation(frame):
     return stack
 
 print("Iniciando...")
-for i in range(5):
+
+scoresArr = []
+
+for i in range(4):
     game.new_episode()
     # Llenar la pila inicial con el primer frame repetido
     state = game.get_state()
@@ -63,3 +66,9 @@ for i in range(5):
         
         game.make_action(ACTIONS_LIST[int(action_index)])
         time.sleep(0.02)
+
+    scoresArr.append(int(game.get_game_variable(vzd.GameVariable.KILLCOUNT)))
+print("Kills in episodes: ")
+for i in scoresArr:
+    print('. ' + str(i))
+print(f"Max number of kills: {max(scoresArr)}")
